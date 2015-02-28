@@ -1,0 +1,13 @@
+{
+  "name": "customchartjs",
+  "version": "1.0.0",
+  "description": "Some custom chart extensions for Chart.js",
+  "homepage": "https://github.com/nnnick/Chart.js",
+  "author": "Grazia Stracquadanio",
+  // "main": [
+  //   "Chart.StackedBar.js"
+  // ],
+  "dependencies": {
+    "Chart.js": ">= 1.0.0-beta"
+  }
+}
