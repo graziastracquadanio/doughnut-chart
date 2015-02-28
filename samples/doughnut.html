@@ -2,16 +2,17 @@
 <html>
 	<head>
 		<title>Doughnut Chart</title>
-		<!-- <script src="http://www.chartjs.org/assets/Chart.min.js"></script> -->
-		<script src="../Chart.js"></script>
+		<script src="http://www.chartjs.org/assets/Chart.min.js"></script>
 		<script src="../src/Chart.Doughnut.js"></script>
 		<style>
 			body{
 				padding: 0;
 				margin: 0;
 			}
+
 			#canvas-holder{
-				width:30%;
+				margin: 0 auto;
+				width:50%;
 			}
 		</style>
 	</head>
@@ -59,7 +60,10 @@
 
 			window.onload = function(){
 				var ctx = document.getElementById("chart-area").getContext("2d");
-				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
+					responsive : true,
+					maintainAspectRatio: false
+				});
 			};
 
 
